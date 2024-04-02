@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Елена Салак](https://up.htmlacademy.ru/adaptive-individual/1/user/2464775).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
