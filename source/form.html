@@ -50,15 +50,15 @@
         <fieldset class="form__fieldset form__fieldset--data">
           <legend class="visually-hidden">Персональные данные кота</legend>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__text-field">
               <label for="name">Имя:*</label>
               <input type="text" name="name" placeholder="Барсик" id="name" required>
             </li>
-            <li class="form__item">
+            <li class="form__text-field">
               <label for="weight">Вес (кг):*</label>
               <input type="number" name="weight" placeholder="7" id="weight" required>
             </li>
-            <li class="form__item">
+            <li class="form__text-field">
               <label for="age">Вес (кг):*</label>
               <input type="number" name="age" placeholder="7" id="age" required>
             </li>
@@ -67,15 +67,15 @@
         <fieldset class="form__fieldset form__fieldset--purpose">
           <legend class="visually-hidden">Цель функционального питания</legend>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__radio">
               <input type="radio" name="purpose" id="slim" value="slim" checked>
               <label for="slim">Похудение</label>
             </li>
-            <li class="form__item">
+            <li class="form__radio">
               <input type="radio" name="purpose" id="gain-in-weight" value="gain-in-weight">
               <label for="gain-in-weight">Набор массы</label>
             </li>
-            <li class="form__item">
+            <li class="form__radio">
               <input type="radio" name="purpose" id="need-advice" value="need-advice">
               <label for="need-advice">Не знаю (Нужен ваш совет)</label>
             </li>
@@ -84,11 +84,11 @@
         <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__caption">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
-            <li class="form__item form__item--mail">
+            <li class="form__text-field form__text-field--mail">
               <label for="email">E-mail:*</label>
               <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
             </li>
-            <li class="form__item form__item--phone">
+            <li class="form__text-field form__text-field--phone">
               <label for="number">Телефон:*</label>
               <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
             </li>
@@ -101,19 +101,19 @@
         <fieldset class="form__fieldset form__fieldset--add">
           <legend class="form__caption">Дополнительно</legend>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__checkbox">
               <input type="checkbox" name="sweetener" id="sweetener" checked>
               <label for="sweetener">Сахарозаменитель</label>
             </li>
-            <li class="form__item">
+            <li class="form__checkbox">
               <input type="checkbox" name="water" id="water">
               <label for="water">Питьевая вода</label>
             </li>
-            <li class="form__item">
+            <li class="form__checkbox">
               <input type="checkbox" name="milk" id="milk">
               <label for="milk">Молоко</label>
             </li>
-            <li class="form__item">
+            <li class="form__checkbox">
               <input type="checkbox" name="vitamins" id="vitamins">
               <label for="vitamins">Витамины</label>
             </li>
