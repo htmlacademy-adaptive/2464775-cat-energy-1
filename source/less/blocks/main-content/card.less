@@ -1,25 +1,28 @@
-.card__title {
-  font-family: @add-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: @blackish-brown-color;
-}
+.card {
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    color: @blackish-brown-color;
 
-.card__characteristics dt,
-.card__characteristics dd {
-  font-size: 12px;
-  line-height: 18px;
-}
+    &--show {
+      color: @almost-black-color;
+    }
+  }
 
-.card__title--show {
-  color: @almost-black-color;
-}
+  &__characteristics {
+    dt,
+    dd {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
 
-.card__tastes {
-  font-size: 12px;
-  line-height: 16px;
-}
+  &__tastes {
+    font-size: 12px;
+    line-height: 16px;
+  }
 
-.card__show-all {
-  color: @primary-color;
+  &__show-all {
+    color: @primary-color;
+  }
 }
