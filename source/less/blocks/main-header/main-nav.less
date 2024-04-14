@@ -1,4 +1,10 @@
 .main-nav {
-  padding-top: 13px;
-  padding-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
