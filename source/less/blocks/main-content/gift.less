@@ -1,9 +1,20 @@
 .gift {
   background-color: @bg-color;
+
+  @media (min-width: @desktop-width) {
+    max-width: 245px;
+  }
 }
 
 .gift__thesis {
   font-size: 16px;
   line-height: 20px;
   color: @white-color;
+}
+
+.add-gift-container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

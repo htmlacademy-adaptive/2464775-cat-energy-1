@@ -3,10 +3,85 @@
   font-size: 24px;
   line-height: 26px;
   color: @black-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .form__obligatory-fields {
   font-size: 14px;
   line-height: 16px;
   color: @black-color;
+  margin: 0;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    list-style: 30px;
+  }
+}
+
+.form__comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__list--add {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.outro-container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__caption-contacts {
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 76px;
+  }
+}
+
+.form__comment label {
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 78px;
+  }
+}
+
+.form__caption-add {
+  padding-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 57px;
+  }
 }

@@ -46,7 +46,7 @@
       <main class="form-container">
         <div class="form-intro">
           <h1 class="form-intro__title title">Подбор программы</h1>
-          <p class="form-intro__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="form-intro__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Анкета</h2>
@@ -85,7 +85,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__caption">Контактные данные (владельца кота)</legend>
+            <legend class="form__caption form__caption-contacts">Контактные данные (владельца кота)</legend>
             <ul class="form__list">
               <li class="form__text-field form__text-field--icon">
                 <label for="email">E-mail:*</label>
@@ -102,8 +102,8 @@
             <textarea name="comment" placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
           </div>
           <fieldset class="form__fieldset form__fieldset--add">
-            <legend class="form__caption">Дополнительно</legend>
-            <ul class="form__list">
+            <legend class="form__caption form__caption-add">Дополнительно</legend>
+            <ul class="form__list form__list--add">
               <li class="form__checkbox">
                 <input type="checkbox" name="sweetener" id="sweetener" checked>
                 <label for="sweetener">Сахарозаменитель</label>
@@ -122,13 +122,18 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__obligatory-fields">* — Обязательные поля</p>
+          <div class="outro-container">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__obligatory-fields">* — Обязательные поля</p>
+          </div>
         </form>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <p class="map__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="map__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <div class="map__address-container">
+            <address class="map__address">ул. Большая<br> Конюшенная, д. 19/8</address>
+            <address class="map__address">Санкт-Петербург</address>
+          </div>
           <!-- Здесь будет интерактивная карта, когда я научусь ее вставлять -->
         </section>
       </main>

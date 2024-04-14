@@ -1,0 +1,18 @@
+.product-cards__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-rows: auto;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 63px;
+    column-gap: 80px;
+  }
+}
