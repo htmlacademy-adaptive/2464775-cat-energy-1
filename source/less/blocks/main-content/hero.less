@@ -8,7 +8,19 @@
   line-height: 14px;
   color: @white-color;
   margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 302px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+    color: @black-color;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 52px;
+  }
 }
 
 .hero__title {
@@ -16,4 +28,22 @@
   color: @white-color;
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    color: @black-color;
+    font-size: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 110px;
+  }
+}
+
+.hero__button {
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
