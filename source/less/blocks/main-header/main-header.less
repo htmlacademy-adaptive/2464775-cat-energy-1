@@ -1,0 +1,13 @@
+.main-header__logo-wrapper {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+
+  a {
+    color: @almost-black-color;
+  }
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    min-height: 65px;
+  }
+}
