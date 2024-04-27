@@ -1,9 +1,35 @@
 .main-footer__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  row-gap: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: @gray;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  a {
+    color: @almost-black-color;
+  }
+}
+
+.main-footer__copyright a {
+  color: @icon-gray;
+}
+
+.main-footer__socials {
+  justify-self: center;
+
+  a {
+    color: @icon-gray;
+  }
+}
+
+.main-footer__logo-text {
+  justify-self: center;
 }
