@@ -120,12 +120,25 @@
   position: relative;
 }
 
-.case__slider-wrapper {
-  position: relative;
+.case__img-wrapper {
+  &--before {
+    width: 140px;
+    height: 256px;
+    overflow: hidden;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  &--after {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.case__imgs-wrapper {
+  display: grid;
 }
 
 .case__after {
-  position: absolute;
-  top: 0;
-  left: 0;
+  clip-path: inset(0 0 0 50%);
 }
