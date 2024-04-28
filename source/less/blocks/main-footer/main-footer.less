@@ -6,6 +6,7 @@
   padding-bottom: 40px;
   padding-top: 40px;
   background-color: @gray;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -25,11 +26,31 @@
 .main-footer__socials {
   justify-self: center;
 
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @line-gray;
+      height: 1px;
+      width: 100%;
+      left: 0;
+    }
+
+    &::after {
+      top: 84px;
+    }
+
+    &::before {
+      bottom: 94px;
+    }
+  }
+
   a {
     color: @icon-gray;
   }
 }
 
 .main-footer__logo-text {
-  justify-self: center;
+  margin-left: 0;
 }

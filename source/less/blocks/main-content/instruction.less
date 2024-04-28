@@ -2,7 +2,7 @@
   font-size: 36px;
   line-height: 40px;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
@@ -41,9 +41,36 @@
 }
 
 .instruction__item {
-  max-width: 250px;
   padding-left: 80px;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @basic-green;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: -2px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--useful::before {
+    background-image: url("/img/useful-icon.svg");
+  }
+
+  &--powder::before {
+    background-image: url("/img/powder-icon.svg");
+  }
+
+  &--eat::before {
+    background-image: url("/img/eat-icon.svg");
+  }
+
+  &--result::before {
+    background-image: url("/img/result-icon.svg");
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
