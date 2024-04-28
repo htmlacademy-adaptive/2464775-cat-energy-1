@@ -1,4 +1,4 @@
-.case {
+.container-case {
   background-color: @bg-gray;
 }
 
@@ -7,6 +7,7 @@
   font-size: 24px;
   line-height: 1;
   color: @black-color;
+  padding-top: 14px;
   padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
@@ -20,6 +21,11 @@
   font-size: 12px;
   line-height: 1;
   margin: 0;
+  position: absolute;
+  background-color: @bg-gray;
+  left: 22px;
+  max-width: 80px;
+  top: 41px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -86,7 +92,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 99px;
@@ -109,8 +115,17 @@
 }
 
 .case__item {
-  border-top: 1px solid @border-color;
-  border-left: 1px solid @border-color;
-  border-right: 1px solid @border-color;
+  border: 1px solid @border-color;
   border-radius: 3px;
+  position: relative;
+}
+
+.case__slider-wrapper {
+  position: relative;
+}
+
+.case__after {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

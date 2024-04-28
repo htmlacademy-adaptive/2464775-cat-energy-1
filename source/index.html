@@ -95,7 +95,7 @@
           </ul>
         </section>
       </div>
-      <div class="container">
+      <div class="container container-case">
         <section class="case">
           <h2 class="case__title title">Живой пример</h2>
           <p class="case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -116,11 +116,24 @@
             </div>
           </div>
           <div class="case__slider-wrapper slider">
-            <img class="case__before" src="#" width="280" height="256" alt="Кот Борис до функционального питания">
-            <img class="case__after" src="#" width="280" height="256" alt="Кот Борис после функционального питания">
+            <img class="case__before" src="/img/cat-before.png" width="280" height="256" alt="Кот Борис до функционального питания">
+            <img class="case__after" src="/img/cat-after.png" width="280" height="256" alt="Кот Борис после функционального питания">
             <span class="case__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">
+                <svg class="slider__toggle slider__toggle--less" width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0 0 9l8 9V0Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <svg class="slider__base" width="160" height="256" viewBox="0 0 160 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="138" width="4" height="256" rx="2" fill="currentColor"/>
+                <rect x="121" y="109" width="38" height="38" rx="19" fill="#fff"/>
+                <rect x="121" y="109" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <button class="slider__toggle" type="button">
+                <svg class="slider__toggle slider__toggle--more" width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 9 0 0v18l8-9Z" fill="currentColor"/>
+                </svg>
+              </button>
             </span>
           </div>
         </section>
@@ -139,7 +152,7 @@
         </section>
       </div>
     </main>
-    <div class="container">
+    <div class="container container-footer">
       <footer class="main-footer">
         <div class="main-footer__wrapper">
           <a class="main-footer__logo-text logo-text" href="#">
