@@ -7,6 +7,15 @@
   @media (min-width: @tablet-width) {
     padding: 60px 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 79px;
+    width: fit-content;
+    background-color: @white-color;
+    position: absolute;
+    top: 95px;
+    left: 0;
+  }
 }
 
 .map__invitation {
@@ -45,4 +54,10 @@
 
 .map img {
   display: block;
+}
+
+.map {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }

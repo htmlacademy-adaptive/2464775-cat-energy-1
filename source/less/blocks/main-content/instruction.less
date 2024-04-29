@@ -38,6 +38,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 0;
+    column-gap: 77px;
   }
 }
 
@@ -83,6 +84,10 @@
     grid-template-columns: 1fr 1.8fr;
     grid-template-rows: 1fr 1fr;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1.2fr;
+  }
 }
 
 .instruction__counter {
@@ -110,7 +115,7 @@
 }
 
 .container__instruction {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: calc(@desktop-width - 1px)) {
     position: relative;
 
     &::after {

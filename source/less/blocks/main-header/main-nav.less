@@ -17,6 +17,7 @@
   max-height: 24px;
   background-color: @white-color;
   position: relative;
+  top: 20px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -39,8 +40,11 @@
   display: grid;
   grid-template-columns: auto 24px;
   grid-template-rows: repeat(2, min-content);
-  justify-content: center;
-  align-content: end;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    align-content: end;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::after {
