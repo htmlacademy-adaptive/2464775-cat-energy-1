@@ -6,6 +6,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: end;
   }
 }
 
@@ -37,7 +38,9 @@
 .main-nav__menu {
   display: grid;
   grid-template-columns: auto 24px;
-  align-items: center;
+  grid-template-rows: repeat(2, min-content);
+  justify-content: center;
+  align-content: end;
 }
 
 .main-nav--closed .main-nav__toggle::after {
