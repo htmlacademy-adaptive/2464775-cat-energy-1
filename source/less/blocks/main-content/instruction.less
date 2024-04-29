@@ -29,6 +29,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
+    column-gap: 153px;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 47px;
@@ -54,6 +55,10 @@
     top: -2px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet-width) {
+      top: 40px;
+    }
   }
 
   &--useful::before {
@@ -74,5 +79,49 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.instruction__counter {
+  @media (width: calc(@tablet-width - 1px)) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-family: @add-font;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 1;
+    color: @gray;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.instruction__thesis {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+  }
+}
+
+.container__instruction {
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: @mercury-gray-color;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      display: block;
+    }
   }
 }
