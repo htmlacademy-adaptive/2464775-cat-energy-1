@@ -2,12 +2,25 @@
   @media (min-width: @desktop-width) {
     max-width: 245px;
   }
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  padding-bottom: 35px;
 }
 
 .gift__thesis {
   font-size: 16px;
   line-height: 20px;
   color: @white-color;
+  margin: 0;
+  max-width: 161px;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  z-index: 2;
+  margin-top: 48px;
+  text-align: center;
 }
 
 .add-gift-container {
@@ -16,3 +29,19 @@
     justify-content: space-between;
   }
 }
+
+.gift__icon {
+  color: @white-color;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  z-index: 2;
+  margin-top: 59px;
+}
+
+
+.gift__pic {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+}
+

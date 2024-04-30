@@ -2,6 +2,7 @@
   font-size: 36px;
   padding-top: 27px;
   padding-bottom: 41px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -11,5 +12,27 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 74px;
+  }
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 17px);
+      height: 1px;
+      margin-left: -20px;
+    }
+
+    &::before {
+      top: 0;
+      background-color: @line-gray;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      background-color: @line-card-color;
+    }
   }
 }

@@ -16,3 +16,32 @@
     column-gap: 80px;
   }
 }
+
+.product-cards__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  padding-top: 20px;
+  padding-bottom: 25px;
+  position: relative;
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 17px);
+      height: 1px;
+      margin-left: -20px;
+      background-color: @line-card-color;
+      bottom: 0;
+    }
+  }
+
+  &--show {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    justify-items: center;
+  }
+}
