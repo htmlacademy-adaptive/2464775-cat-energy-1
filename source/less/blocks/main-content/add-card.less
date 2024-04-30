@@ -8,6 +8,11 @@
   dd {
     line-height: 14px;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -16,6 +21,10 @@
   color: @blackish-brown-color;
   text-transform: uppercase;
   padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .add-card {
