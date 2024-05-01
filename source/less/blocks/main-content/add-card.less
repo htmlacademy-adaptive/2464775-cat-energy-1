@@ -6,6 +6,7 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 0;
+    padding-right: 41px;
   }
 
   dt,
@@ -43,10 +44,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 315px 240px 95px 245px;
-  }
 }
 
 .add-card__button {
@@ -56,5 +53,6 @@
   @media (min-width: @desktop-width) {
     grid-column: 4 / 5;
     max-width: 244px;
+    min-width: 244px;
   }
 }
