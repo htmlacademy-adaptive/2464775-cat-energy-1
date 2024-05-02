@@ -60,73 +60,94 @@
           <h2 class="visually-hidden">Анкета</h2>
           <fieldset class="form__fieldset form__fieldset--data">
             <legend class="visually-hidden">Персональные данные кота</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--data">
               <li class="form__text-field">
-                <label for="name">Имя:*</label>
-                <input type="text" name="name" placeholder="Барсик" id="name" required>
+                <label class="form__text-label" for="name">Имя:*</label>
+                <input class="form__text-input" type="text" name="name" placeholder="Барсик" id="name" required>
               </li>
               <li class="form__text-field">
-                <label for="weight">Вес (кг):*</label>
-                <input type="number" name="weight" placeholder="7" id="weight" required>
+                <label class="form__text-label" for="weight">Вес (кг):*</label>
+                <input class="form__text-input" type="number" name="weight" placeholder="7" id="weight" required>
               </li>
-              <li class="form__text-field">
-                <label for="age">Вес (кг):*</label>
-                <input type="number" name="age" placeholder="7" id="age" required>
+              <li class="form__text-field form__text-field--line">
+                <label class="form__text-label" for="age">Возраст (лет):*</label>
+                <input class="form__text-input" type="number" name="age" placeholder="7" id="age" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--purpose">
             <legend class="visually-hidden">Цель функционального питания</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--radio">
               <li class="form__radio">
-                <input type="radio" name="purpose" id="slim" value="slim" checked>
-                <label for="slim">Похудение</label>
+                <input class="form__input visually-hidden" type="radio" name="purpose" id="slim" value="slim" checked>
+                <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
+                </svg>
+                <label class="form__radio-label" for="slim">Похудение</label>
               </li>
               <li class="form__radio">
-                <input type="radio" name="purpose" id="gain-in-weight" value="gain-in-weight">
-                <label for="gain-in-weight">Набор массы</label>
+                <input class="form__input visually-hidden" type="radio" name="purpose" id="gain-in-weight" value="gain-in-weight">
+                <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
+                </svg>
+                <label class="form__radio-label" for="gain-in-weight">Набор массы</label>
               </li>
               <li class="form__radio">
-                <input type="radio" name="purpose" id="need-advice" value="need-advice">
-                <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+                <input class="form__input visually-hidden" type="radio" name="purpose" id="need-advice" value="need-advice">
+                <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
+                </svg>
+                <label class="form__radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__caption form__caption-contacts">Контактные данные (владельца кота)</legend>
-            <ul class="form__list">
-              <li class="form__text-field form__text-field--icon">
-                <label for="email">E-mail:*</label>
-                <input type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
+            <legend class="form__caption form__caption--contacts">Контактные данные (владельца кота)</legend>
+            <ul class="form__list form__list--contacts">
+              <li class="form__text-field form__text-icon form__text-icon--mail">
+                <label class="form__text-label" for="email">E-mail:*</label>
+                <input class="form__text-input" type="email" name="mail" placeholder="kuklachev@gmail.com" id="email" required>
               </li>
-              <li class="form__text-field form__text-field--icon">
-                <label for="number">Телефон:*</label>
-                <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
+              <li class="form__text-field form__text-icon form__text-icon--phone">
+                <label class="form__text-label" for="number">Телефон:*</label>
+                <input class="form__text-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" required>
               </li>
             </ul>
           </fieldset>
           <div class="form__comment">
             <label for="comment">Комментарий</label>
-            <textarea name="comment" placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
+            <textarea class="form__comment-textarea" name="comment" placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
           </div>
           <fieldset class="form__fieldset form__fieldset--add">
-            <legend class="form__caption form__caption-add">Дополнительно</legend>
+            <legend class="form__caption form__caption--add">Дополнительно</legend>
             <ul class="form__list form__list--add">
               <li class="form__checkbox">
-                <input type="checkbox" name="sweetener" id="sweetener" checked>
-                <label for="sweetener">Сахарозаменитель</label>
+                <input class="form__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
+                </svg>
+                <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="form__checkbox">
-                <input type="checkbox" name="water" id="water">
-                <label for="water">Питьевая вода</label>
+                <input class="form__input visually-hidden" type="checkbox" name="water" id="water">
+                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
+                </svg>
+                <label class="form__checkbox-label" for="water">Питьевая вода</label>
               </li>
               <li class="form__checkbox">
-                <input type="checkbox" name="milk" id="milk">
-                <label for="milk">Молоко</label>
+                <input class="form__input visually-hidden" type="checkbox" name="milk" id="milk">
+                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
+                </svg>
+                <label class="form__checkbox-label" for="milk">Молоко</label>
               </li>
               <li class="form__checkbox">
-                <input type="checkbox" name="vitamins" id="vitamins">
-                <label for="vitamins">Витамины</label>
+                <input class="form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
+                </svg>
+                <label class="form__checkbox-label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -136,7 +157,7 @@
           </div>
         </form>
       </div>
-      <div class="container">
+      <div class="container container-map">
         <section class="map">
           <div class="map__wrapper-text">
             <h2 class="visually-hidden">Карта</h2>

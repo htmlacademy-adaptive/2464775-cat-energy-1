@@ -16,6 +16,20 @@
   font-size: 36px;
   padding-top: 27px;
   padding-bottom: 37px;
+  position: relative;
+
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 17px);
+      height: 1px;
+      margin-left: -20px;
+      top: 0;
+      background-color: @line-gray;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
