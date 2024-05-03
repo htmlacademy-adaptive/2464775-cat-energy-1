@@ -43,6 +43,12 @@
   padding: 0;
   text-transform: uppercase;
 
+  @media (max-width: calc(@tablet-width - 1px)) {
+    .form__radio:last-child {
+      padding-bottom: 45px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     list-style: 30px;
@@ -272,6 +278,20 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+
+  &--line::after {
+    @media (max-width: calc(@tablet-width - 1px)) {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 17px);
+      height: 1px;
+      margin-left: -20px;
+      left: 0;
+      bottom: 19px;
+      background-color: @line-gray;
+    }
+  }
 }
 
 .form__radio-label {
