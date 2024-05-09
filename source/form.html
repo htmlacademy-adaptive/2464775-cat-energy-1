@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container container--form">
         <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__menu">
             <div class="main-header__logo-wrapper">
@@ -49,13 +49,13 @@
       </div>
     </header>
     <main class="form-container">
-      <div class="container">
+      <div class="container container--form">
         <div class="form-intro">
           <h1 class="form-intro__title title">Подбор программы</h1>
           <p class="form-intro__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         </div>
       </div>
-      <div class="container">
+      <div class="container container--form">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Анкета</h2>
           <fieldset class="form__fieldset form__fieldset--data">
@@ -102,7 +102,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__caption form__caption--contacts">Контактные данные (владельца кота)</legend>
+            <legend class="form__caption form__caption--contacts form__caption--line">Контактные данные (владельца кота)</legend>
             <ul class="form__list form__list--contacts">
               <li class="form__text-field form__text-icon form__text-icon--mail">
                 <label class="form__text-label" for="email">E-mail:*</label>
@@ -115,11 +115,11 @@
             </ul>
           </fieldset>
           <div class="form__comment">
-            <label for="comment">Комментарий</label>
+            <label class="form__comment--line" for="comment">Комментарий</label>
             <textarea class="form__comment-textarea" name="comment" placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
           </div>
           <fieldset class="form__fieldset form__fieldset--add">
-            <legend class="form__caption form__caption--add">Дополнительно</legend>
+            <legend class="form__caption form__caption--add form__caption--line">Дополнительно</legend>
             <ul class="form__list form__list--add">
               <li class="form__checkbox">
                 <input class="form__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -157,7 +157,7 @@
           </div>
         </form>
       </div>
-      <div class="container container-map">
+      <div class="container container--form container-map">
         <section class="map">
           <div class="map__wrapper-text">
             <h2 class="visually-hidden">Карта</h2>
@@ -172,7 +172,7 @@
       </div>
     </main>
     <div class="container-footer">
-      <div class="container">
+      <div class="container container--form">
         <footer class="main-footer">
           <div class="main-footer__wrapper">
             <a class="main-footer__logo-text logo-text" href="#">
