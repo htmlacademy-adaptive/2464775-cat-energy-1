@@ -32,6 +32,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 47px;
+    counter-reset: item;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,30 +43,21 @@
 }
 
 .instruction__item {
-  @media (min-width: @tablet-width) {
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: 1fr 1.8fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1.2fr;
-  }
-}
-
-.instruction__counter {
-  display: none;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    font-family: @add-font;
-    font-size: 280px;
-    font-weight: 400;
-    line-height: 1;
-    color: @gray;
-    grid-column: 2 / -1;
-    grid-row: 1 / -1;
+    &::after {
+      position: absolute;
+      counter-increment: item;
+      content: counter(item);
+      font-family: @add-font;
+      font-size: 280px;
+      line-height: 1;
+      color: @gray;
+      top: 0;
+      left: 115px;
+      z-index: -1;
+    }
   }
 }
 
@@ -77,9 +69,10 @@
   min-height: 60px;
 
   @media (min-width: @tablet-width) {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
     margin-left: 0;
+    min-height: 280px;
+    align-items: start;
+    padding-top: 151px;
   }
 
   &::before {
@@ -96,7 +89,7 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      top: -100px;
+      top: 40px;
       left: 0;
     }
   }
