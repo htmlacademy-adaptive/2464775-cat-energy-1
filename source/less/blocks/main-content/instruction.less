@@ -72,11 +72,14 @@
 .instruction__thesis {
   position: relative;
   display: flex;
+  align-items: center;
   margin-left: 80px;
+  min-height: 60px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
+    margin-left: 0;
   }
 
   &::before {
@@ -86,12 +89,15 @@
     width: 60px;
     height: 60px;
     left: -80px;
-    top: -2px;
+    top: 0;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: @tablet-width) {
-      top: 40px;
+      width: 80px;
+      height: 80px;
+      top: -100px;
+      left: 0;
     }
   }
 
