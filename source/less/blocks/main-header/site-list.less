@@ -10,6 +10,18 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  z-index: 1;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: @white-color;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -38px;
+    z-index: -1;
+  }
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -78,6 +90,12 @@
         &::after {
           width: 100%;
         }
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::after {
+        background-color: @white-color;
       }
     }
   }
