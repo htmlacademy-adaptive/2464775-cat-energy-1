@@ -35,6 +35,10 @@
     counter-reset: item;
   }
 
+  @media (min-width: calc(@tablet-width + 1px)) {
+    column-gap: 10px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 0;

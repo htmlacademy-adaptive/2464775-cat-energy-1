@@ -51,9 +51,13 @@
     <main class="main-container">
       <div class="container container-hero">
         <section class="hero">
-          <h1 class="hero__title title">Функциональное<br>питание для котов</h1>
+          <h1 class="hero__title title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <img class="hero__pic" src="img/goods-example.png" width="280" height="270" alt="Пример товара.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/goods-example-desktop.png 1x, img/goods-example-desktop@x2.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/goods-example-tablet.jpg 1x, img/goods-example-tablet@x2.jpg 2x" width="709" height="609">
+            <img class="hero__pic" src="img/goods-example.png" srcset="img/goods-example.png 1x, img/goods-example@x2.png 2x" width="280" height="270" alt="Пример товара.">
+          </picture>
           <a class="hero__button button" href="form.html">Подобрать программу</a>
         </section>
       </div>
@@ -124,10 +128,16 @@
           <div class="case__slider-wrapper slider">
             <div class="case__imgs-wrapper">
               <div class="case__img-wrapper case__img-wrapper--before">
-                <img class="case__before" src="img/cat-before.png" width="280" height="256" alt="Кот Борис до функционального питания">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
+                  <img class="case__before" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="280" height="256" alt="Кот Борис до функционального питания">
+                </picture>
               </div>
               <div class="case__img-wrapper case__img-wrapper--after">
-                <img class="case__after" src="img/cat-after.png" width="280" height="256" alt="Кот Борис после функционального питания">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+                  <img class="case__after" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="280" height="256" alt="Кот Борис после функционального питания">
+                </picture>
               </div>
             </div>
             <span class="case__toggles slider__toggles">
@@ -160,7 +170,11 @@
               <address class="map__address">Санкт-Петербург</address>
             </div>
           </div>
-          <img class="map__location" src="img/map.jpg" width="320" height="362" alt="Компания по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img class="map__location" src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="320" height="362" alt="Компания по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          </picture>
         </section>
       </div>
     </main>
