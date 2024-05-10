@@ -6,7 +6,8 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 130px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,6 +31,7 @@
     padding: 29px 37px 40px 37px;
     min-height: 430px;
     background-color: @gray;
+    align-content: end;
   }
 
   @media (min-width: @desktop-width) {
