@@ -1,0 +1,35 @@
+.slider {
+  position: relative;
+}
+
+.slider__base {
+  color: @icon-gray;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.slider__toggle {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &--less,
+  &--more {
+    color: @icon-gray;
+    position: absolute;
+    background-color: transparent;
+  }
+
+  &--less {
+    z-index: 1;
+    top: 119px;
+    left: 129px;
+  }
+
+  &--more {
+    z-index: 1;
+    top: 119px;
+    left: 145px;
+  }
+}

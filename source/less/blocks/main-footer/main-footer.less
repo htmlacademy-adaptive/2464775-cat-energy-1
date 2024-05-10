@@ -1,9 +1,58 @@
 .main-footer__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  row-gap: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
+
+  a {
+    color: @almost-black-color;
+  }
+}
+
+.main-footer__copyright a {
+  color: @icon-gray;
+}
+
+.main-footer__socials {
+  justify-self: center;
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @line-gray;
+      height: 1px;
+      width: 100%;
+      left: 0;
+    }
+
+    &::after {
+      top: 84px;
+    }
+
+    &::before {
+      bottom: 94px;
+    }
+  }
+
+  a {
+    color: @icon-gray;
+  }
+}
+
+.main-footer__logo-text {
+  margin-left: 0;
+}
+
+.container-footer {
+  background-color: @gray;
 }

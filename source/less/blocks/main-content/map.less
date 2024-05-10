@@ -1,12 +1,20 @@
-.map {
+.map__wrapper-text {
   display: flex;
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 79px;
+    background-color: @white-color;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    min-width: 565px;
   }
 }
 
@@ -38,4 +46,22 @@
 
 .map__address {
   font-style: normal;
+}
+
+.map__location {
+  margin-left: -20px;
+}
+
+.map img {
+  display: block;
+}
+
+.map {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.container-map {
+  background-color: @gray;
 }

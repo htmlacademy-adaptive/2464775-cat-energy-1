@@ -2,11 +2,22 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    padding-right: 41px;
+  }
 
   dt,
   dd {
     line-height: 14px;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -14,6 +25,15 @@
   font-size: 16px;
   color: @blackish-brown-color;
   text-transform: uppercase;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .add-card {
@@ -24,17 +44,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 315px 240px 95px 245px;
-  }
 }
 
 .add-card__button {
   grid-column: 1 / -1;
-  max-width: 632px;
+  max-width: 100%;
 
   @media (min-width: @desktop-width) {
     grid-column: 4 / 5;
+    max-width: 244px;
+    min-width: 244px;
   }
 }

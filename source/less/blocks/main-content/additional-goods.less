@@ -1,8 +1,52 @@
 .additional-goods__title {
   font-size: 24px;
+  padding-bottom: 36px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @basic-green;
+    height: 2px;
+    width: calc(100% - 226px);
+    right: 0;
+    margin-right: -20px;
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: calc(100% - 378px);
+      top: 24px;
+      margin-right: -30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: calc(100% - 338px - 40px);
+      left: 378px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
+    padding-bottom: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @basic-green;
+      height: 2px;
+      width: 30px;
+      left: 0;
+      margin-left: -30px;
+      top: 24px;
+    }
   }
 }
 
@@ -10,4 +54,65 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  max-width: 896px;
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    li:nth-child(1)::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: @border-color;
+      top: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: calc(@desktop-width - 1px)) {
+    border: 1px solid @border-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: 1px solid @border-color;
+  }
+}
+
+.additional-goods {
+  padding-top: 26px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 76px;
+    padding-bottom: 87px;
+  }
+}
+
+.additional-goods__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: @border-color;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 38px 28px 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+    padding: 15px 0 17px 0;
+  }
 }

@@ -1,8 +1,29 @@
 .gift {
-  background-color: @bg-color;
-
   @media (min-width: @desktop-width) {
     max-width: 245px;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    position: absolute;
+    top: 191px;
+    right: 145px;
+    max-height: 288px;
+    padding: 0;
   }
 }
 
@@ -10,11 +31,60 @@
   font-size: 16px;
   line-height: 20px;
   color: @white-color;
+  margin: 0;
+  max-width: 161px;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  z-index: 2;
+  margin-top: 48px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    z-index: 2;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    z-index: 2;
+  }
 }
 
-.add-gift-container {
+.gift__icon {
+  color: @white-color;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  z-index: 2;
+  margin-top: 59px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    z-index: 2;
+    margin: 0;
+  }
+
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: 2;
+  }
+}
+
+
+.gift__pic {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+}
+
+.container-gift {
+  position: relative;
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    border-top: 1px solid @line-card-color;
   }
 }

@@ -1,6 +1,17 @@
 .hero {
-  background-image: url("");
-  background-color: @bg-color;
+  @media (max-width: calc(@tablet-width - 1px)) {
+    background-image: url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 90px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__slogan {
@@ -8,14 +19,16 @@
   line-height: 14px;
   color: @white-color;
   margin: 0;
-  padding-bottom: 302px;
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 50px;
     color: @black-color;
     font-size: 20px;
     line-height: 1;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,12 +41,14 @@
   color: @white-color;
   padding-top: 27px;
   padding-bottom: 25px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     padding-top: 65px;
     padding-bottom: 40px;
     color: @black-color;
     font-size: 60px;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,8 +57,25 @@
 }
 
 .hero__button {
+  margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    min-height: 54px;
+    max-width: 244px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 266px;
+  }
+}
+
+.hero__pic {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: -1;
+    right: 500px;
+    top: 250px;
   }
 }
