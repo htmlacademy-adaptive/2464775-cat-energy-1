@@ -3,10 +3,24 @@
 }
 
 .slider__base {
-  color: @icon-gray;
+  display: flex;
   top: 0;
   left: 0;
   position: absolute;
+  height: 256px;
+  width: auto;
+  color: @icon-gray;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+  }
+}
+
+.slider__base-rect-icon {
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    width: 4px;
+  }
 }
 
 .slider__toggle {
