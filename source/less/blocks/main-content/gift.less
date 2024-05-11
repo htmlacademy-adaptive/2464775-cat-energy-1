@@ -1,4 +1,11 @@
 .gift {
+  background-color: fade(@basic-green, 85%);
+  max-height: 290px;
+
+  @media (min-width: @tablet-width) {
+    max-height: 200px;
+  }
+
   @media (min-width: @desktop-width) {
     max-width: 245px;
   }

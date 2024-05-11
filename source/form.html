@@ -58,49 +58,51 @@
       <div class="container container--form">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Анкета</h2>
-          <fieldset class="form__fieldset form__fieldset--data">
-            <legend class="visually-hidden">Персональные данные кота</legend>
-            <ul class="form__list form__list--data">
-              <li class="form__text-field">
-                <label class="form__text-label" for="name">Имя:*</label>
-                <input class="form__text-input" type="text" name="name" placeholder="Барсик" id="name" required>
-              </li>
-              <li class="form__text-field">
-                <label class="form__text-label" for="weight">Вес (кг):*</label>
-                <input class="form__text-input" type="number" name="weight" placeholder="7" id="weight" required>
-              </li>
-              <li class="form__text-field form__text-field--line">
-                <label class="form__text-label" for="age">Возраст (лет):*</label>
-                <input class="form__text-input" type="number" name="age" placeholder="7" id="age" required>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--purpose">
-            <legend class="visually-hidden">Цель функционального питания</legend>
-            <ul class="form__list form__list--radio">
-              <li class="form__radio">
-                <input class="form__input visually-hidden" type="radio" name="purpose" id="slim" value="slim" checked>
-                <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
-                </svg>
-                <label class="form__radio-label" for="slim">Похудение</label>
-              </li>
-              <li class="form__radio">
-                <input class="form__input visually-hidden" type="radio" name="purpose" id="gain-in-weight" value="gain-in-weight">
-                <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
-                </svg>
-                <label class="form__radio-label" for="gain-in-weight">Набор массы</label>
-              </li>
-              <li class="form__radio form__radio--line">
-                <input class="form__input visually-hidden" type="radio" name="purpose" id="need-advice" value="need-advice">
-                <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
-                </svg>
-                <label class="form__radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset form__fieldset--data">
+              <legend class="visually-hidden">Персональные данные кота</legend>
+              <ul class="form__list form__list--data">
+                <li class="form__text-field">
+                  <label class="form__text-label" for="name">Имя:*</label>
+                  <input class="form__text-input" type="text" name="name" placeholder="Барсик" id="name" required>
+                </li>
+                <li class="form__text-field">
+                  <label class="form__text-label" for="weight">Вес (кг):*</label>
+                  <input class="form__text-input" type="number" name="weight" placeholder="7" id="weight" required>
+                </li>
+                <li class="form__text-field form__text-field--line">
+                  <label class="form__text-label" for="age">Возраст (лет):*</label>
+                  <input class="form__text-input" type="number" name="age" placeholder="7" id="age" required>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--purpose">
+              <legend class="visually-hidden">Цель функционального питания</legend>
+              <ul class="form__list form__list--radio">
+                <li class="form__radio">
+                  <input class="form__input visually-hidden" type="radio" name="purpose" id="slim" value="slim" checked>
+                  <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
+                  </svg>
+                  <label class="form__radio-label" for="slim">Похудение</label>
+                </li>
+                <li class="form__radio">
+                  <input class="form__input visually-hidden" type="radio" name="purpose" id="gain-in-weight" value="gain-in-weight">
+                  <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
+                  </svg>
+                  <label class="form__radio-label" for="gain-in-weight">Набор массы</label>
+                </li>
+                <li class="form__radio form__radio--line">
+                  <input class="form__input visually-hidden" type="radio" name="purpose" id="need-advice" value="need-advice">
+                  <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
+                  </svg>
+                  <label class="form__radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__caption form__caption--contacts form__caption--line">Контактные данные (владельца кота)</legend>
             <ul class="form__list form__list--contacts">
