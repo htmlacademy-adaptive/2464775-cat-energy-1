@@ -1,9 +1,14 @@
 .container-case {
   background-color: @bg-gray;
   position: relative;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     background-color: @white-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 

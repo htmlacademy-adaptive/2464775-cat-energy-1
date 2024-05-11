@@ -7,6 +7,10 @@
   padding-bottom: 14px;
   text-transform: uppercase;
 
+  @media (width: @mobile-width) {
+    max-width: 76px;
+  }
+
   &--show {
     color: @almost-black-color;
     grid-column: 1 / -1;
@@ -145,12 +149,13 @@
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   margin-top: 17px;
-  min-width: 250px;
+  min-width: 280px;
   justify-self: center;
 
   @media (min-width: @tablet-width) {
     grid-row: 4 / 5;
     grid-column: 1 / -1;
+    min-width: 250px;
   }
 
   @media (min-width: @desktop-width) {
@@ -162,7 +167,7 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: -50px;
-    left: 25%;
+    left: 38px;
 
     &--1000 {
       top: -75px;
