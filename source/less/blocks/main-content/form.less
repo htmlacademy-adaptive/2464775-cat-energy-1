@@ -36,6 +36,12 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  &--data {
+    @media (min-width: @desktop-width) {
+      flex-grow: 1;
+    }
+  }
 }
 
 .form__list {
@@ -67,9 +73,6 @@
       min-height: 196px;
       margin: 0;
       padding: 25px 28px;
-      position: absolute;
-      top: 415px;
-      right: 120px;
     }
 
     &--contacts {
@@ -83,6 +86,13 @@
     &--data {
       max-width: 570px;
     }
+  }
+}
+
+.form__fieldset-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -121,9 +131,15 @@
 }
 
 .outro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    padding-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -347,6 +363,10 @@
   padding-bottom: 12px;
   cursor: pointer;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 32px;
+  }
+
   input {
     margin: 0;
   }
@@ -357,15 +377,17 @@
 }
 
 .form__button {
-  min-width: 100%;
+  min-width: 280px;
   margin-bottom: 21px;
-  margin-right: 60px;
+  margin-right: 0;
 
   @media (min-width: @tablet-width) {
     min-height: 54px;
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 0;
+    margin-right: 60px;
+    min-width: 282px;
   }
 }
 

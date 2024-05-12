@@ -2,34 +2,24 @@
   position: relative;
 }
 
-.slider__base {
-  color: @icon-gray;
-  top: 0;
-  left: 0;
+.slider__toggles {
+  display: flex;
+  max-width: 24px;
   position: absolute;
+  top: 119px;
+  right: calc(50% - 9px);
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    top: 247px;
+  }
 }
 
 .slider__toggle {
-  padding: 0;
+  display: flex;
+  width: 8px;
+  height: 18px;
+  color: @icon-gray;
   border: none;
-  cursor: pointer;
-
-  &--less,
-  &--more {
-    color: @icon-gray;
-    position: absolute;
-    background-color: transparent;
-  }
-
-  &--less {
-    z-index: 1;
-    top: 119px;
-    left: 129px;
-  }
-
-  &--more {
-    z-index: 1;
-    top: 119px;
-    left: 145px;
-  }
+  background-color: transparent;
 }
