@@ -1,25 +1,21 @@
+.advantages__link {
+  color: @black-color;
+  display: flex;
+  align-items: center;
+}
+
 .advantages__catalog {
   font-family: @add-font;
   font-size: 16px;
   line-height: 1;
-  color: @black-color;
   text-transform: uppercase;
   padding-right: 15px;
-  position: relative;
-
-  ::after {
-    content: "";
-    position: absolute;
-    mask: url("..img/sprite.svg#advantages-arrow");
-    background-color: @black-color;
-    width: 24px;
-    height: 12px;
-  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     font-size: 20px;
     line-height: 30px;
+    padding-right: 25px;
   }
 }
 
