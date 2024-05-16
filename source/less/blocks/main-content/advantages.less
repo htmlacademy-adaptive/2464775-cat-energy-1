@@ -5,6 +5,16 @@
   color: @black-color;
   text-transform: uppercase;
   padding-right: 15px;
+  position: relative;
+
+  ::after {
+    content: "";
+    position: absolute;
+    mask: url("..img/sprite.svg#advantages-arrow");
+    background-color: @black-color;
+    width: 24px;
+    height: 12px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
@@ -157,9 +167,4 @@
     top: 24px;
     left: 13px;
   }
-}
-
-.advantages__arrow {
-  color: @black-color;
-  cursor: pointer;
 }
