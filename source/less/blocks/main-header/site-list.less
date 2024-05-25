@@ -14,7 +14,7 @@
   position: relative;
 
   &::after {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: (@tablet-width - 1px)) {
       content: "";
       background-color: @white-color;
       position: absolute;
@@ -63,7 +63,7 @@
     padding-bottom: 8px;
   }
 
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: (@tablet-width - 1px)) {
     &::before {
       content: "";
       background-color: @mercury-gray-color;
@@ -112,7 +112,7 @@
 }
 
 .site-list li:last-child {
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: (@tablet-width - 1px)) {
     &::after {
       content: "";
       background-color: @mercury-gray-color;

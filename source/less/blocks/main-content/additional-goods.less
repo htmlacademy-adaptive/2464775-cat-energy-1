@@ -55,9 +55,12 @@
   margin: 0;
   padding: 0;
   position: relative;
-  max-width: 896px;
 
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (min-width: @tablet-width) {
+    max-width: 896px;
+  }
+
+  @media (max-width: (@tablet-width - 1px)) {
     li:nth-child(1)::before {
       content: "";
       position: absolute;
@@ -68,7 +71,7 @@
     }
   }
 
-  @media (min-width: @tablet-width) and (max-width: calc(@desktop-width - 1px)) {
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     border: 1px solid @border-color;
   }
 

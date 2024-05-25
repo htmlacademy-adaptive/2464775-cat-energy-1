@@ -35,7 +35,7 @@
     counter-reset: item;
   }
 
-  @media (min-width: calc(@tablet-width + 1px)) {
+  @media (min-width: (@tablet-width + 1px)) {
     column-gap: 10px;
   }
 
@@ -116,7 +116,7 @@
 }
 
 .container__instruction {
-  @media (min-width: @tablet-width) and (max-width: calc(@desktop-width - 1px)) {
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     position: relative;
 
     &::after {

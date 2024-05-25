@@ -50,7 +50,7 @@
   padding: 0;
   text-transform: uppercase;
 
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: (@tablet-width - 1px)) {
     .form__radio:last-child {
       padding-bottom: 45px;
     }
@@ -283,7 +283,7 @@
 }
 
 .form__text-field--line::after {
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: (@tablet-width - 1px)) {
     content: "";
     position: absolute;
     width: calc(100vw - 17px);
@@ -303,7 +303,7 @@
   position: relative;
 
   &--line::after {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: (@tablet-width - 1px)) {
       content: "";
       position: absolute;
       width: calc(100vw - 17px);

@@ -115,7 +115,7 @@
     max-width: 340px;
   }
 
-  @media (min-width: calc(@tablet-width + 1px)) {
+  @media (min-width: (@tablet-width + 1px)) {
     max-width: 60%;
   }
 
@@ -124,7 +124,7 @@
     max-width: 100%;
   }
 
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: (@tablet-width - 1px)) {
     &::after {
       content: "";
       position: absolute;
