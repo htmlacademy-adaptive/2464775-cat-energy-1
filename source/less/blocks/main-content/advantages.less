@@ -9,7 +9,7 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
-  padding-right: 15px;
+  padding-right: 16px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
@@ -23,8 +23,12 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  padding: 10px 0 29px 70px;
+  padding: 9px 0 29px 70px;
   position: relative;
+
+  &--weight {
+    padding: 6px 0 29px 72px;
+  }
 
   &::before {
     content: "";
@@ -59,7 +63,7 @@
     background-image: url("../img/weight-icon.svg");
     width: 67px;
     height: 50px;
-    left: -12px;
+    left: -7px;
     background-size: cover;
 
     @media (min-width: @tablet-width) {
@@ -103,7 +107,7 @@
 
 .advantages__description {
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 42px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -139,8 +143,12 @@
 
 .advantages__item {
   background-color: @gray;
-  padding: 20px 33px 18px 20px;
+  padding: 21px 20px 22px;
   position: relative;
+
+  &--weight {
+    padding: 24px 20px 22px;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 77px 63px 53px 52px;
