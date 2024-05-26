@@ -48,7 +48,7 @@
     @media (min-width: @tablet-width) {
       width: 200px;
       height: 211px;
-      left: 65%;
+      left: 66%;
     }
 
     @media (min-width: @desktop-width) {
@@ -69,7 +69,8 @@
     @media (min-width: @tablet-width) {
       width: 268px;
       height: 200px;
-      left: 62%;
+      left: 60%;
+      top: 15px;
     }
 
     @media (min-width: @desktop-width) {
@@ -98,6 +99,10 @@
   display: grid;
   row-gap: 20px;
 
+  @media (min-width: @tablet-width) {
+    row-gap: 30px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,12 +119,12 @@
     color: @black-color;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
     padding-left: 0;
     max-width: 340px;
   }
 
-  @media (min-width: (@tablet-width + 1px)) {
+  @media (min-width: (@tablet-width + 18px)) {
     max-width: 60%;
   }
 
@@ -151,24 +156,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 77px 63px 53px 52px;
+    padding: 75px 63px 53px 52px;
+    min-height: 372px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 41px 61px 55px 52px;
-  }
-}
-
-.advantages__icon {
-  position: absolute;
-
-  &--slim {
-    top: 21px;
-    left: 20px;
-  }
-
-  &--weight {
-    top: 24px;
-    left: 13px;
   }
 }

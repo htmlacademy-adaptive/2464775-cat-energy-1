@@ -38,8 +38,11 @@
 
 .main-nav__menu {
   display: grid;
-  grid-template-columns: auto 24px;
-  grid-template-rows: repeat(2, min-content);
+
+  @media (max-width: (@tablet-width - 1px)) {
+    grid-template-columns: auto 24px;
+    grid-template-rows: repeat(2, min-content);
+  }
 
   @media (min-width: @tablet-width) {
     justify-content: center;
