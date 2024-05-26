@@ -36,6 +36,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
     &--index {
       a {
         color: @white-color;
@@ -54,6 +57,10 @@
   @media (min-width: @tablet-width) {
     padding-right: 5px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 2px;
+  }
 }
 
 .site-list__item {
@@ -65,7 +72,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 71px 0 8px;
+    padding: 0 0 19px 0;
   }
 
   @media (max-width: (@tablet-width - 1px)) {
@@ -82,8 +89,8 @@
   }
 
   &--current {
-    @media (min-width: @tablet-width) {
-      &::after {
+    &::after {
+      @media (min-width: @tablet-width) {
         content: "";
         background-color: @basic-green;
         height: 2px;
@@ -93,6 +100,12 @@
         left: 0;
       }
 
+      @media (min-width: @desktop-width) {
+        bottom: 9px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
       &:last-child {
         &::after {
           width: 100%;

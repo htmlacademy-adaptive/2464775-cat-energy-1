@@ -1,5 +1,11 @@
 .slider {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    padding-top: 69px;
+  }
 }
 
 .slider__toggles {
@@ -18,6 +24,10 @@
 
   @media (min-width: @tablet-width) {
     top: 247px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 317px;
   }
 }
 
