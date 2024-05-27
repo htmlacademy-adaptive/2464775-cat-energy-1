@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container container--form">
+      <div class="container">
         <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__menu">
             <div class="main-header__logo-wrapper">
@@ -78,7 +78,7 @@
                   <input class="form__text-input" type="number" name="weight" placeholder="7" id="weight" required>
                 </li>
                 <li class="form__text-field form__text-field--line">
-                  <label class="form__text-label" for="age">Возраст (лет):*</label>
+                  <label class="form__text-label" for="age">Возраст (лет):</label>
                   <input class="form__text-input" type="number" name="age" placeholder="7" id="age" required>
                 </li>
               </ul>
@@ -88,23 +88,14 @@
               <ul class="form__list form__list--radio">
                 <li class="form__radio">
                   <input class="form__input visually-hidden" type="radio" name="purpose" id="slim" value="slim" checked>
-                  <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
-                  </svg>
                   <label class="form__radio-label" for="slim">Похудение</label>
                 </li>
                 <li class="form__radio">
                   <input class="form__input visually-hidden" type="radio" name="purpose" id="gain-in-weight" value="gain-in-weight">
-                  <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
-                  </svg>
                   <label class="form__radio-label" for="gain-in-weight">Набор массы</label>
                 </li>
                 <li class="form__radio form__radio--line">
                   <input class="form__input visually-hidden" type="radio" name="purpose" id="need-advice" value="need-advice">
-                  <svg class="form__radio-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="14.5" stroke="currentColor"/>
-                  </svg>
                   <label class="form__radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
@@ -132,30 +123,18 @@
             <ul class="form__list form__list--add">
               <li class="form__checkbox">
                 <input class="form__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
-                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
-                </svg>
                 <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="form__checkbox">
                 <input class="form__input visually-hidden" type="checkbox" name="water" id="water">
-                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
-                </svg>
                 <label class="form__checkbox-label" for="water">Питьевая вода</label>
               </li>
               <li class="form__checkbox">
                 <input class="form__input visually-hidden" type="checkbox" name="milk" id="milk">
-                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
-                </svg>
                 <label class="form__checkbox-label" for="milk">Молоко</label>
               </li>
               <li class="form__checkbox">
                 <input class="form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                <svg class="form__checkbox-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" d="M.5.5h29v29H.5z"/>
-                </svg>
                 <label class="form__checkbox-label" for="vitamins">Витамины</label>
               </li>
             </ul>
@@ -171,7 +150,7 @@
           <div class="map__wrapper-text">
             <h2 class="visually-hidden">Карта</h2>
             <p class="map__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-            <div class="map__address-container">
+            <div class="map__address-container map__address-container--form">
               <address class="map__address">ул. Большая<br> Конюшенная, д. 19/8</address>
               <address class="map__address">Санкт-Петербург</address>
             </div>
@@ -187,7 +166,7 @@
       </div>
     </main>
     <div class="container-footer">
-      <div class="container container--form">
+      <div class="container">
         <footer class="main-footer">
           <div class="main-footer__wrapper">
             <a class="main-footer__logo-text logo-text" href="#">
