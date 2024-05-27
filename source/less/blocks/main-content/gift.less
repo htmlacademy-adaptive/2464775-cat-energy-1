@@ -27,8 +27,8 @@
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     position: absolute;
-    top: 191px;
-    right: 145px;
+    top: 193px;
+    right: 110px;
     max-height: 288px;
     padding: 0;
   }
@@ -50,13 +50,16 @@
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     z-index: 2;
-    margin: 0;
+    margin: -8px 0 0 -60px;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
     z-index: 2;
+    text-align: center;
+    margin: -5px 0 0;
   }
 }
 
@@ -71,13 +74,14 @@
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     z-index: 2;
-    margin: 0;
+    margin: -14px 0 0 -119px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     z-index: 2;
+    margin: 0 0 -52px;
   }
 }
 
@@ -98,5 +102,9 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
