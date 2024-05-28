@@ -25,9 +25,6 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
     font-size: 16px;
   }
 }
@@ -122,6 +119,9 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 10px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -387,6 +387,7 @@
     @media (min-width: @tablet-width) {
       width: 40px;
       height: 40px;
+      top: -12px;
     }
   }
 }
@@ -492,6 +493,15 @@
 .form__caption--line::after {
   @media (min-width: @tablet-width) {
     top: 62px;
+  }
+}
+
+.form__caption {
+  @media (min-width: @tablet-width) {
+    &--contacts::after,
+    &--add::after {
+      top: 20px;
+    }
   }
 }
 
