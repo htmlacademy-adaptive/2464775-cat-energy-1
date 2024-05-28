@@ -56,7 +56,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    list-style: 30px;
 
     &--radio {
       border: 1px solid @border-gray;
@@ -70,13 +69,14 @@
       min-width: 570px;
       min-height: 196px;
       margin: 0;
-      padding: 25px 28px;
+      padding: 37px 28px 0;
     }
 
     &--contacts {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 70px;
+      padding-bottom: 5px;
+      align-items: start;
     }
   }
 
@@ -126,6 +126,8 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 28px;
+    column-gap: 80px;
   }
 
   padding-bottom: 15px;
@@ -320,6 +322,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 37px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .form__radio-label {
@@ -447,6 +453,11 @@
     margin-bottom: 0;
     margin-right: 60px;
     min-width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 570px;
+    margin-right: 77px;
   }
 }
 
