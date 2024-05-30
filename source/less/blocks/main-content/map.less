@@ -1,8 +1,7 @@
 .map__wrapper-text {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 28px 0 26px;
 
   @media (min-width: @tablet-width) {
     padding: 60px 40px;
@@ -35,12 +34,22 @@
 .map__address-container {
   line-height: 20px;
 
+  &--form {
+    font-family: @main-font;
+    font-size: 14px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -61,22 +70,26 @@
 }
 
 .map {
-  img {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+
+  iframe {
     display: block;
-    object-fit: cover;
     width: calc(100% + 40px);
+    height: 362px;
+    margin-left: -20px;
 
     @media (min-width: @tablet-width) {
+      height: 400px;
       width: calc(100% + 60px);
+      margin-left: -30px;
     }
 
     @media (min-width: @desktop-width) {
       width: calc(100% + 220px);
+      margin-left: -110px;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    position: relative;
   }
 }
 

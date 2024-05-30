@@ -4,6 +4,10 @@
   justify-content: space-between;
   padding-bottom: 15px;
 
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
+    justify-content: end;
+  }
+
   @media (min-width: @desktop-width) {
     padding-bottom: 0;
     padding-right: 41px;
@@ -19,6 +23,13 @@
       line-height: 20px;
     }
   }
+
+  dd {
+    @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
+      min-width: 93px;
+      text-align: right;
+    }
+  }
 }
 
 .add-card__title {
@@ -29,6 +40,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {

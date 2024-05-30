@@ -1,8 +1,7 @@
 .instruction__title {
   font-size: 36px;
   line-height: 40px;
-  padding-top: 20px;
-  padding-bottom: 42px;
+  padding: 20px 0 40px;
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
@@ -28,14 +27,14 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
-    column-gap: 153px;
+    column-gap: 62px;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 47px;
+    padding-bottom: 45px;
     counter-reset: item;
   }
 
-  @media (min-width: (@tablet-width + 1px)) {
+  @media (min-width: (@tablet-width + 18px)) {
     column-gap: 10px;
   }
 
@@ -77,6 +76,16 @@
     min-height: 280px;
     align-items: start;
     padding-top: 151px;
+  }
+
+  @media (max-width: (@tablet-width + 18px)) {
+    &--short {
+      max-width: 207px;
+    }
+
+    &--long {
+      max-width: 245px;
+    }
   }
 
   &::before {

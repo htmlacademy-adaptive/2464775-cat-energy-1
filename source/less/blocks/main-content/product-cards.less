@@ -7,7 +7,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 130px;
+    row-gap: 141px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,9 +21,20 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, min-content);
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 22px 0 25px;
   position: relative;
+
+  @media (max-width: (@tablet-width - 1px)) {
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      background-color: @line-card-color;
+      height: 1px;
+      width: calc(100% + 40px);
+      bottom: 0;
+      margin-left: -20px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;

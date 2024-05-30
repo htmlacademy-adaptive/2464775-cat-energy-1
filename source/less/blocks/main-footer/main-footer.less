@@ -1,8 +1,7 @@
 .main-footer__wrapper {
   display: grid;
-  row-gap: 40px;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  row-gap: 36px;
+  padding: 40px 0;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -10,10 +9,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 55px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 66px 0;
   }
 
   a {
     color: @almost-black-color;
+
+    &:hover {
+      color: @hover-logo;
+    }
+
+    &:active {
+      color: @active-logo;
+    }
   }
 }
 
@@ -36,11 +48,11 @@
     }
 
     &::after {
-      top: 84px;
+      top: 82px;
     }
 
     &::before {
-      bottom: 94px;
+      bottom: 99px;
     }
   }
 

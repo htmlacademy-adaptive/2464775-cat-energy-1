@@ -19,6 +19,14 @@
   position: relative;
   top: 20px;
 
+  &:hover {
+    background-color: @white-color;
+  }
+
+  &:active {
+    background-color: @white-color;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -38,8 +46,11 @@
 
 .main-nav__menu {
   display: grid;
-  grid-template-columns: auto 24px;
-  grid-template-rows: repeat(2, min-content);
+
+  @media (max-width: (@tablet-width - 1px)) {
+    grid-template-columns: auto 24px;
+    grid-template-rows: repeat(2, min-content);
+  }
 
   @media (min-width: @tablet-width) {
     justify-content: center;

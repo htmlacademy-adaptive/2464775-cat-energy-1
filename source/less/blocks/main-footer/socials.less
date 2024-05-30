@@ -3,8 +3,20 @@
   margin: 0;
   padding: 0;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 0 0 39px;
+  }
 }
 
 .socials__item:not(:last-child) {
-  padding-right: 24px;
+  padding-right: 27px;
+}
+
+.socials__link:hover + svg {
+  color: @basic-green;
+}
+
+.socials__link:active + svg {
+  opacity: 30%;
 }
