@@ -2,6 +2,23 @@
   color: @black-color;
   display: flex;
   align-items: center;
+
+  svg {
+    transition: width 0.5s ease;
+  }
+
+  &:hover {
+    svg {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    svg {
+      width: 32px;
+      opacity: 30%;
+    }
+  }
 }
 
 .advantages__catalog {

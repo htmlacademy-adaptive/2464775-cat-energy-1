@@ -198,6 +198,18 @@
   padding: 10px 14px;
   flex-grow: 1;
 
+  &:hover {
+    border-color: @border-color;
+  }
+
+  &:focus {
+    border-color: @primary-color;
+  }
+
+  &:disabled {
+    border-color: @color-error;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 10px 19px;
   }
@@ -406,6 +418,26 @@
   @media (min-width: @tablet-width) {
     background-image: url("../img/tick-tablet.svg");
   }
+}
+
+.form__radio input:active + .form__radio-label::before {
+  border-color: @hover-gray;
+}
+
+.form__radio input:focus + .form__radio-label::before {
+  border-color: @primary-color;
+}
+
+.form__radio input:disabled + .form__radio-label::before {
+  border-color: @color-error;
+}
+
+.form__checkbox input:active + .form__checkbox-label::before {
+  border-color: @hover-gray;
+}
+
+.form__checkbox input:disabled + .form__checkbox-label::before {
+  opacity: 30%;
 }
 
 .form__comment-textarea {
