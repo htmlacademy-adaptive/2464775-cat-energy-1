@@ -14,7 +14,7 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-header__nav main-nav main-nav--closed .main-nav--nojs">
+        <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__menu">
             <div class="main-header__logo-wrapper">
               <a class="main-header__logo-pic logo-pic" href="#">
@@ -56,8 +56,8 @@
         </nav>
       </div>
     </header>
-    <main class="main-container">
-      <div class="container container-hero">
+    <main>
+      <div class="container container--hero">
         <section class="hero">
           <h1 class="hero__title title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
@@ -96,7 +96,7 @@
           </ul>
         </section>
       </div>
-      <div class="container container__instruction">
+      <div class="container container--instruction">
         <section class="instruction">
           <h2 class="instruction__title title">Как это работает</h2>
           <ul class="instruction__list">
@@ -115,7 +115,7 @@
           </ul>
         </section>
       </div>
-      <div class="container container-case">
+      <div class="container container--case">
         <section class="case">
           <h2 class="case__title title">Живой пример</h2>
           <p class="case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -152,11 +152,13 @@
             </div>
             <div class="case__toggles slider__toggles">
               <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Перелистнуть слайдер влево</span>
                 <svg width="8" height="18" viewBox="0 0 8 18">
                   <use href="img/sprite.svg#toggle-less" />
                 </svg>
               </button>
               <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Перелистнуть слайдер вправо</span>
                 <svg width="8" height="18" viewBox="0 0 8 18">
                   <use href="img/sprite.svg#toggle-more" />
                 </svg>
@@ -195,6 +197,7 @@
             <ul class="main-footer__socials socials">
               <li class="socials__item">
                 <a class="socials__link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Группа в VK</span>
                   <svg width="28" height="22" viewBox="0 0 28 22">
                     <use href="img/sprite.svg#vk-icon" />
                   </svg>
@@ -202,6 +205,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Канал на Youtube</span>
                   <svg width="28" height="22" viewBox="0 0 28 22">
                     <use href="img/sprite.svg#youtube-icon" />
                   </svg>
@@ -209,6 +213,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Канал в Telegram</span>
                   <svg width="28" height="22" viewBox="0 0 28 22">
                     <use href="img/sprite.svg#tg-icon" />
                   </svg>
@@ -218,6 +223,7 @@
             <div class="main-footer__copyright copyright">
               <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               <a class="copyright__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="visually-hidden">Сайт HTML Academy</span>
                 <svg width="27" height="34" viewBox="0 0 27 34">
                   <use href="img/sprite.svg#academy-icon" />
                 </svg>

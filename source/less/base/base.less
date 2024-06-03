@@ -7,27 +7,6 @@ body {
   margin: 0;
 }
 
-.container {
-  max-width: calc(@tablet-width - 1px);
-  width: 100%;
-  padding: 0 20px 0 20px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    max-width: calc(@desktop-width - 1px);
-    padding: 0 30px 0 30px;
-
-    &--form {
-      padding: 0 70px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: @desktop-width;
-    padding: 0 110px 0 110px;
-  }
-}
-
 a {
   text-decoration: none;
 }
