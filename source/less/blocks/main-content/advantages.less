@@ -2,20 +2,27 @@
   color: @black-color;
   display: flex;
   align-items: center;
+  position: relative;
+  width: fit-content;
 
-  svg {
-    transition: width 0.5s ease;
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/arrow-icon.svg");
+    width: 24px;
+    height: 12px;
+    right: -45px;
   }
 
   &:hover {
-    svg {
-      width: 32px;
+    &::after {
+      transform: scale(1.2) translateX(2px);
+      transition: transform 0.14s ease-in;
     }
   }
 
   &:active {
-    svg {
-      width: 32px;
+    &::after {
       opacity: 30%;
     }
   }
@@ -26,13 +33,11 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
-  padding-right: 16px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     font-size: 20px;
     line-height: 30px;
-    padding-right: 25px;
   }
 }
 
