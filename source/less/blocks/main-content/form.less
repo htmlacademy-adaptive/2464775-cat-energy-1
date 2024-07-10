@@ -256,6 +256,7 @@
     text-transform: uppercase;
     background-repeat: no-repeat;
     background-position: center right 10px;
+    cursor: pointer;
   }
 
   &--mail {
@@ -437,7 +438,15 @@
   border-color: @hover-gray;
 }
 
+.form__checkbox input:focus + .form__checkbox-label::before {
+  border-color: @black-color;
+}
+
 .form__checkbox input:disabled + .form__checkbox-label::before {
+  opacity: 30%;
+}
+
+.form__checkbox input:disabled + .form__checkbox-label {
   opacity: 30%;
 }
 
