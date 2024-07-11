@@ -2,51 +2,32 @@
   font-size: 24px;
   padding-bottom: 36px;
   position: relative;
+  width: fit-content;
+  background-color: @white-color;
+  box-shadow: -20px 0 0 0 @white-color, 20px 0 0 0 @white-color;
 
   @media (min-width: @tablet-width) {
     padding-left: 40px;
+    box-shadow: 40px 0 0 0 @white-color;
+    font-size: 36px;
+    padding-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
+    box-shadow: -40px 0 0 0 @white-color, 40px 0 0 0 @white-color;
   }
 
   &::before {
     content: "";
     position: absolute;
-    background-color: @basic-green;
+    width: 100vw;
     height: 2px;
-    width: calc(100% - 226px);
+    z-index: -1;
+    background-color: @basic-green;
+    top: 0.6em;
+    box-shadow: 100vw 0 0 @basic-green;
     right: 0;
-    margin-right: -20px;
-    top: 15px;
-
-    @media (min-width: @tablet-width) {
-      width: calc(100% - 388px);
-      top: 22px;
-      margin-right: -30px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: calc(100% - 338px - 40px);
-      left: 378px;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-    padding-bottom: 80px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: @basic-green;
-      height: 2px;
-      width: 30px;
-      left: 0;
-      margin-left: -30px;
-      top: 24px;
-    }
   }
 }
 
