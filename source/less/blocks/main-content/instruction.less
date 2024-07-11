@@ -123,20 +123,3 @@
     background-image: url("../img/result-icon.svg");
   }
 }
-
-.container__instruction {
-  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      background-color: @mercury-gray-color;
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      display: block;
-    }
-  }
-}
